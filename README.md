@@ -112,14 +112,6 @@ Modifiez dans `index.html` :
 - ✅ Safari (moderne)
 - ✅ Navigateurs mobiles
 
-## Hébergement
-
-Le site peut être hébergé sur :
-- **GitHub Pages** (gratuit)
-- **Netlify** (gratuit)
-- **Vercel** (gratuit)
-- Tout hébergeur web classique
-
 ## Licence
 
 Ce projet est libre d'utilisation pour le cimetière Repos Céleste.
