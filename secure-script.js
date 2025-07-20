@@ -4,7 +4,7 @@ const defuntsDatabase = {
         name: 'Jean Martin',
         birthDate: '15/03/1945',
         deathDate: '12/01/2025',
-        tombNumber: 'Section A - Rangée 12 - N°45',
+        tombNumber: 'A12-45',
         section: 'Section A',
         gpsCoordinates: '45.7578° N, 4.8320° E',
         accessCode: '123456',
@@ -16,7 +16,7 @@ const defuntsDatabase = {
         name: 'Sophie Dubois',
         birthDate: '22/08/1962',
         deathDate: '05/02/2025',
-        tombNumber: 'Section B - Rangée 8 - N°23',
+        tombNumber: 'B8-23',
         section: 'Section B',
         gpsCoordinates: '45.7580° N, 4.8325° E',
         accessCode: '789012',
@@ -28,7 +28,7 @@ const defuntsDatabase = {
         name: 'Ahmed Hassan',
         birthDate: '10/12/1938',
         deathDate: '28/06/2025',
-        tombNumber: 'Section C - Rangée 5 - N°67',
+        tombNumber: 'C5-67',
         section: 'Section C',
         gpsCoordinates: '45.7582° N, 4.8318° E',
         accessCode: '456789',
@@ -65,6 +65,11 @@ function setupEventListeners() {
         accessCodeInput.addEventListener('input', formatAccessCode);
     }
 
+    const tombNumberInput = document.getElementById('tomb-number');
+    if (tombNumberInput) {
+        tombNumberInput.addEventListener('input', formatTombNumber);
+    }
+
     // Gestion de la sécurité
     setupSecurityFeatures();
 }
@@ -90,6 +95,36 @@ function formatAccessCode(event) {
     if (value.length > 6) {
         value = value.substring(0, 6);
     }
+    event.target.value = value;
+}
+
+function formatTombNumber(event) {
+    let value = event.target.value.toUpperCase();
+    // Nettoyer la valeur : garder seulement lettres et chiffres
+    value = value.replace(/[^A-Z0-9]/g, '');
+    
+    // Format flexible: L#-## ou L##-##
+    if (value.length >= 1) {
+        let formatted = value.substring(0, 1); // Première lettre
+        
+        if (value.length > 1) {
+            // Déterminer si on doit ajouter le tiret après 1 ou 2 chiffres
+            // On ajoute le tiret quand on a au moins 3 caractères (L + au moins 2 chiffres)
+            if (value.length >= 3) {
+                formatted += value.substring(1, 2) + '-' + value.substring(2, 4);
+            } else {
+                formatted += value.substring(1); // Juste ajouter les chiffres sans tiret
+            }
+        }
+        
+        value = formatted;
+    }
+    
+    // Limiter à 5 caractères maximum (L#-##)
+    if (value.length > 5) {
+        value = value.substring(0, 5);
+    }
+    
     event.target.value = value;
 }
 

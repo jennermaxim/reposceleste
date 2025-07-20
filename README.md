@@ -87,14 +87,20 @@ Pour tester la page sécurisée, utilisez ces données d'exemple :
 **Famille 1 :**
 - Nom du défunt: `Jean Martin`
 - ID Famille: `FAM-2025-001`
-- Numéro de tombe: `Section A - Rangée 12 - N°45`
+- Numéro de tombe: `A12-45`
 - Code d'accès: `123456`
 
 **Famille 2 :**
 - Nom du défunt: `Sophie Dubois`
 - ID Famille: `FAM-2025-002`
-- Numéro de tombe: `Section B - Rangée 8 - N°23`
+- Numéro de tombe: `B8-23`
 - Code d'accès: `789012`
+
+**Famille 3 :**
+- Nom du défunt: `Ahmed Hassan`
+- ID Famille: `FAM-2025-003`
+- Numéro de tombe: `C5-67`
+- Code d'accès: `456789`
 
 ### 🛡️ Fonctionnalités de Sécurité
 - **Authentification multi-critères** obligatoire
@@ -103,6 +109,7 @@ Pour tester la page sécurisée, utilisez ces données d'exemple :
 - **Protection contre le débogage** (F12, clic droit désactivés)
 - **Validation côté client** avec formatage automatique
 - **Gestion des erreurs** avec délais de sécurité
+- **Format de tombe flexible** : `L#-##` (ex: C5-67) ou `L##-##` (ex: A12-45)
 
 ## Technologies Utilisées
 
