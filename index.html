@@ -1,309 +1,382 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Repos Céleste - Cimetière</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-brand">
-                    <img src="images/logo.jpg" alt="Repos Céleste Logo" class="nav-logo">
-                    <h1>Repos Céleste</h1>
-                </div>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
-                    <li><a href="#horaires" class="nav-link">Horaires</a></li>
-                    <li><a href="#localisation" class="nav-link">Localisation</a></li>
-                    <li><a href="#galerie" class="nav-link">Galerie</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="nav-toggle" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-brand">
+            <img
+              src="images/logo.jpg"
+              alt="Repos Céleste Logo"
+              class="nav-logo"
+            />
+            <h1>Repos Céleste</h1>
+          </div>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#accueil" class="nav-link">Accueil</a></li>
+            <li><a href="#horaires" class="nav-link">Horaires</a></li>
+            <li><a href="#localisation" class="nav-link">Localisation</a></li>
+            <li><a href="#galerie" class="nav-link">Galerie</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="accueil" class="hero">
-        <div class="hero-content">
-            <div class="container">
-                <h1 class="hero-title">Repos Céleste</h1>
-                <p class="hero-subtitle">Un lieu de paix et de sérénité pour honorer la mémoire de vos proches</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Nous Contacter</a>
-                    <a href="https://chat.whatsapp.com/DZnzlKLFqyP9MbmaJzQSXF" target="_blank" class="btn btn-secondary">
-                        <i class="fab fa-whatsapp"></i> Rejoindre le Groupe WhatsApp
-                    </a>
-                </div>
-            </div>
+      <div class="hero-content">
+        <div class="container">
+          <h1 class="hero-title">Repos Céleste</h1>
+          <p class="hero-subtitle">
+            Un lieu de paix et de sérénité pour honorer la mémoire de vos
+            proches
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Nous Contacter</a>
+            <a
+              href="https://chat.whatsapp.com/DZnzlKLFqyP9MbmaJzQSXF"
+              target="_blank"
+              class="btn btn-secondary"
+            >
+              <i class="fab fa-whatsapp"></i> Rejoindre le Groupe WhatsApp
+            </a>
+          </div>
         </div>
-        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-overlay"></div>
     </section>
 
     <!-- Horaires Section -->
     <section id="horaires" class="section">
-        <div class="container">
-            <h2 class="section-title">Horaires et Informations</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Heures de Visite</h3>
-                    <p><strong>8h00 - 14h00</strong></p>
-                    <p>Tous les jours de la semaine</p>
-                </div>
-
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Bureau d'Accueil</h3>
-                    <p><strong>Rond-point Signers</strong></p>
-                    <p>Ouvert de 08h00 à 16h00</p>
-                </div>
-
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Heures d'Enterrement</h3>
-                    <div class="burial-times">
-                        <span>09h00 - 10h00</span>
-                        <span>10h30 - 11h30</span>
-                        <span>12h00 - 13h00</span>
-                        <span>13h30 - 14h30</span>
-                        <span>15h00 - 16h00</span>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Horaires et Informations</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
             </div>
+            <h3>Heures de Visite</h3>
+            <p><strong>8h00 - 14h00</strong></p>
+            <p>Tous les jours de la semaine</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>Bureau d'Accueil</h3>
+            <p><strong>Rond-point Signers</strong></p>
+            <p>Ouvert de 08h00 à 16h00</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Heures d'Enterrement</h3>
+            <div class="burial-times">
+              <span>09h00 - 10h00</span>
+              <span>10h30 - 11h30</span>
+              <span>12h00 - 13h00</span>
+              <span>13h30 - 14h30</span>
+              <span>15h00 - 16h00</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Nos Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Entretien des Sépultures</h3>
-                    <p>Maintenance et entretien régulier des tombes et monuments funéraires</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Accompagnement des Familles</h3>
-                    <p>Soutien et guidance durant les moments difficiles</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-calendar-alt"></i>
-                    <h3>Organisation des Cérémonies</h3>
-                    <p>Planification et coordination des services funéraires</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Informations et Annonces</h3>
-                    <p>Notifications importantes via notre groupe WhatsApp officiel</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Nos Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-leaf"></i>
+            <h3>Entretien des Sépultures</h3>
+            <p>
+              Maintenance et entretien régulier des tombes et monuments
+              funéraires
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-users"></i>
+            <h3>Accompagnement des Familles</h3>
+            <p>Soutien et guidance durant les moments difficiles</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Organisation des Cérémonies</h3>
+            <p>Planification et coordination des services funéraires</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-info-circle"></i>
+            <h3>Informations et Annonces</h3>
+            <p>Notifications importantes via notre groupe WhatsApp officiel</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Localisation Section -->
     <section id="localisation" class="section">
-        <div class="container">
-            <h2 class="section-title">Localisation</h2>
-            <div class="location-content">
-                <div class="location-info">
-                    <h3>Comment nous trouver</h3>
-                    <div class="location-details">
-                        <div class="location-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Adresse principale</strong>
-                                <p>Repos Céleste, [Votre Adresse Complète]</p>
-                            </div>
-                        </div>
-                        <div class="location-item">
-                            <i class="fas fa-building"></i>
-                            <div>
-                                <strong>Bureau d'accueil</strong>
-                                <p>Rond-point Signers</p>
-                            </div>
-                        </div>
-                        <div class="location-item">
-                            <i class="fas fa-car"></i>
-                            <div>
-                                <strong>Parking</strong>
-                                <p>Stationnement gratuit disponible</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title">Localisation</h2>
+        <div class="location-content">
+          <div class="location-info">
+            <h3>Comment nous trouver</h3>
+            <div class="location-details">
+              <div class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Adresse principale</strong>
+                  <p>Repos Céleste, [Votre Adresse Complète]</p>
                 </div>
-                <div class="map-container">
-                    <div id="map">
-                        <!-- Remplacez cette div par votre iframe Google Maps -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d-70.0000000!3d40.0000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDAwJzAwLjAiTiA3MMKwMDAnMDAuMCJX!5e0!3m2!1sen!2sus!4v1642000000000!5m2!1sen!2sus" 
-                                width="100%" 
-                                height="400" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-building"></i>
+                <div>
+                  <strong>Bureau d'accueil</strong>
+                  <p>Rond-point Signers</p>
                 </div>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-car"></i>
+                <div>
+                  <strong>Parking</strong>
+                  <p>Stationnement gratuit disponible</p>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="map-container">
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2174.552979139375!2d29.220028940330003!3d-1.6581337875650908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dd09d3eca3ba85%3A0xa0118e8e3ec108a0!2sROND%20POINT%20SIGNERS!5e0!3m2!1sen!2sug!4v1753041653214!5m2!1sen!2sug"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Galerie Section -->
     <section id="galerie" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Galerie Photo</h2>
-            <p class="section-description">Découvrez notre cadre paisible et serein</p>
-            <div class="gallery-grid" id="gallery">
-                <div class="gallery-item" onclick="openModal('images/1.jpg')">
-                    <img src="images/1.jpg" alt="Vue générale du cimetière" loading="lazy">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-expand"></i>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openModal('images/2.jpg')">
-                    <img src="images/2.jpg" alt="Allée principale" loading="lazy">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-expand"></i>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openModal('images/3.jpg')">
-                    <img src="images/3.jpg" alt="Jardin du souvenir" loading="lazy">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-expand"></i>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openModal('images/4.jpg')">
-                    <img src="images/4.jpg" alt="Espace de recueillement" loading="lazy">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-expand"></i>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Galerie Photo</h2>
+        <p class="section-description">
+          Découvrez notre cadre paisible et serein
+        </p>
+        <div class="gallery-grid" id="gallery">
+          <div class="gallery-item" onclick="openModal('images/1.jpg')">
+            <img
+              src="images/1.jpg"
+              alt="Vue générale du cimetière"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
             </div>
+          </div>
+          <div class="gallery-item" onclick="openModal('images/2.jpg')">
+            <img src="images/2.jpg" alt="Allée principale" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openModal('images/3.jpg')">
+            <img src="images/3.jpg" alt="Jardin du souvenir" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openModal('images/4.jpg')">
+            <img
+              src="images/4.jpg"
+              alt="Espace de recueillement"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Informations de Contact</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>Téléphone</strong>
-                            <p>+XXX XX XX XX XX</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <strong>Email</strong>
-                            <p>contact@reposceleste.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-whatsapp"></i>
-                        <div>
-                            <strong>Groupe WhatsApp Officiel</strong>
-                            <p>Pour les informations et annonces importantes</p>
-                            <a href="https://chat.whatsapp.com/DZnzlKLFqyP9MbmaJzQSXF" target="_blank" class="whatsapp-btn">
-                                <i class="fab fa-whatsapp"></i> Rejoindre le Groupe
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Nous Contacter</h3>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Votre email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Votre téléphone">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Envoyer le Message</button>
-                    </form>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Informations de Contact</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Téléphone</strong>
+                <p>+XXX XX XX XX XX</p>
+              </div>
             </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <p>contact@reposceleste.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <strong>Groupe WhatsApp Officiel</strong>
+                <p>Pour les informations et annonces importantes</p>
+                <a
+                  href="https://chat.whatsapp.com/DZnzlKLFqyP9MbmaJzQSXF"
+                  target="_blank"
+                  class="whatsapp-btn"
+                >
+                  <i class="fab fa-whatsapp"></i> Rejoindre le Groupe
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Nous Contacter</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Votre nom"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Votre email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Votre téléphone"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Votre message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Envoyer le Message
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <img src="images/logo.jpg" alt="Repos Céleste Logo" class="footer-logo">
-                    <h3>Repos Céleste</h3>
-                    <p>Un lieu de paix et de dignité pour honorer la mémoire de vos proches.</p>
-                    <div class="social-links">
-                        <a href="https://chat.whatsapp.com/DZnzlKLFqyP9MbmaJzQSXF" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Horaires</h4>
-                    <ul>
-                        <li>Visites: 8h00 - 14h00</li>
-                        <li>Bureau: 8h00 - 16h00</li>
-                        <li>Enterrements: 9h00 - 16h00</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Rond-point Signers</li>
-                        <li><i class="fas fa-phone"></i> +XXX XX XX XX XX</li>
-                        <li><i class="fas fa-envelope"></i> contact@reposceleste.com</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <img
+              src="images/logo.jpg"
+              alt="Repos Céleste Logo"
+              class="footer-logo"
+            />
+            <h3>Repos Céleste</h3>
+            <p>
+              Un lieu de paix et de dignité pour honorer la mémoire de vos
+              proches.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://chat.whatsapp.com/DZnzlKLFqyP9MbmaJzQSXF"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Repos Céleste. Tous droits réservés.</p>
-            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Horaires</h4>
+            <ul>
+              <li>Visites: 8h00 - 14h00</li>
+              <li>Bureau: 8h00 - 16h00</li>
+              <li>Enterrements: 9h00 - 16h00</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> Rond-point Signers</li>
+              <li><i class="fas fa-phone"></i> +XXX XX XX XX XX</li>
+              <li><i class="fas fa-envelope"></i> contact@reposceleste.com</li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Repos Céleste. Tous droits réservés.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Modal pour la galerie -->
     <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div class="modal-nav">
-            <button class="modal-nav-btn" id="prevBtn" onclick="changeImage(-1)">❮</button>
-            <button class="modal-nav-btn" id="nextBtn" onclick="changeImage(1)">❯</button>
-        </div>
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div class="modal-nav">
+        <button class="modal-nav-btn" id="prevBtn" onclick="changeImage(-1)">
+          ❮
+        </button>
+        <button class="modal-nav-btn" id="nextBtn" onclick="changeImage(1)">
+          ❯
+        </button>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
