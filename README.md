@@ -40,14 +40,30 @@ Ce projet contient le site web officiel du cimetière "Repos Céleste".
 - **Informations de contact** complètes
 - **Système de notifications** pour les retours utilisateur
 
+### 🔐 Page d'Accès Sécurisé
+- **Portail sécurisé** pour l'accès aux informations des défunts
+- **Authentification multi-facteurs** (nom, ID famille, tombe, code)
+- **Sessions temporaires** avec expiration automatique (24h)
+- **Informations détaillées** : localisation, autorisations, visites
+- **Fonctionnalités** : impression d'autorisation, contact administration
+- **Sécurité renforcée** : logs, protection contre le débogage
+
 ## Structure du Projet
 
 ```
 reposceleste/
 ├── index.html          # Page principale
-├── styles.css          # Feuilles de style
-├── script.js           # JavaScript interactif
+├── acces-securise.html # Page d'accès sécurisé
+├── styles.css          # Feuilles de style principales
+├── secure-styles.css   # Styles pour la page sécurisée
+├── script.js           # JavaScript interactif principal
+├── secure-script.js    # JavaScript pour la sécurité
 ├── images/             # Dossier des images
+│   ├── logo.jpg        # Logo du cimetière
+│   ├── 1.jpg          # Photo 1 de la galerie
+│   ├── 2.jpg          # Photo 2 de la galerie
+│   ├── 3.jpg          # Photo 3 de la galerie
+│   └── 4.jpg          # Photo 4 de la galerie
 └── README.md           # Ce fichier
 ```
 
@@ -61,6 +77,32 @@ reposceleste/
    - Modifier les informations de contact
 
 3. **Ouvrir** `index.html` dans un navigateur web
+4. **Accéder à la page sécurisée** via `acces-securise.html` (indépendante)
+
+## Page d'Accès Sécurisé
+
+### 🔑 Informations de Test
+Pour tester la page sécurisée, utilisez ces données d'exemple :
+
+**Famille 1 :**
+- Nom du défunt: `Jean Martin`
+- ID Famille: `FAM-2025-001`
+- Numéro de tombe: `Section A - Rangée 12 - N°45`
+- Code d'accès: `123456`
+
+**Famille 2 :**
+- Nom du défunt: `Sophie Dubois`
+- ID Famille: `FAM-2025-002`
+- Numéro de tombe: `Section B - Rangée 8 - N°23`
+- Code d'accès: `789012`
+
+### 🛡️ Fonctionnalités de Sécurité
+- **Authentification multi-critères** obligatoire
+- **Sessions temporaires** avec expiration automatique
+- **Logs de sécurité** pour toutes les actions
+- **Protection contre le débogage** (F12, clic droit désactivés)
+- **Validation côté client** avec formatage automatique
+- **Gestion des erreurs** avec délais de sécurité
 
 ## Technologies Utilisées
 
